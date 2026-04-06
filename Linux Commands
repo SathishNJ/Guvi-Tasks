@@ -1,0 +1,60 @@
+Task-1:
+
+# Create a directory named my_folder
+mkdir my_folder
+
+# Move into the directory
+cd my_folder/
+
+# Create an empty file
+touch my_file.txt
+
+# Open file in vim editor and add content
+vim my_file.txt
+
+# Display content of my_file.txt
+cat my_file.txt
+
+# Create another file
+touch nother_file.txt
+
+# Open second file in vim and add content
+vim nother_file.txt
+
+# Display content of second file
+cat nother_file.txt
+
+# Append content of nother_file.txt to my_file.txt
+cat nother_file.txt >> my_file.txt
+
+# Display updated content of my_file.txt
+cat my_file.txt
+
+Output:
+this is a test file
+this is also a test file
+
+# List files with details in current directory
+ls -l
+
+
+
+Task-2:
+
+# Create 20 text files: file1.txt to file20.txt
+touch file{1..20}.txt
+
+# Correct command to list files with details
+ls -l
+
+# Loop to rename first 5 files from .txt to .yml
+for i in {1..5};
+do
+  mv file$i.txt file$i.yml
+done
+
+# List files sorted by latest modified time and show top 5
+ls -t | head -5
+
+
+
